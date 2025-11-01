@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Go Game</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .emoji {
+            font-size: 2rem;
+            margin: 0 10px;
+        }
+        .description {
+            font-size: 1.2rem;
+            margin: 30px 0;
+            line-height: 1.6;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .feature h3 {
+            margin-top: 0;
+            color: #ffeb3b;
+        }
+        .launch-button {
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin: 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .launch-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+        .instructions {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        .command {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <span class="emoji">🔴</span>
+            <span class="emoji">⚫</span>
+            Alpha Go Game
+            <span class="emoji">⚪</span>
+            <span class="emoji">🔴</span>
+        </h1>
+        
+        <p class="description">
+            Experience the ancient game of Go with a modern AI opponent! 
+            This implementation features reinforcement learning concepts, 
+            neural networks, and Monte Carlo Tree Search for intelligent gameplay.
+        </p>
+
+        <div class="features">
+            <div class="feature">
+                <h3>🎮 Interactive Gameplay</h3>
+                <p>Beautiful web interface with clickable board, real-time scoring, and move history.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>🤖 Smart AI Opponent</h3>
+                <p>Neural network-powered AI using MCTS with adjustable difficulty levels.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>⚙️ Customizable Settings</h3>
+                <p>Choose your name, color, board size (9×9 to 19×19), and AI difficulty.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>📚 Complete Go Rules</h3>
+                <p>Full implementation including capture rules, ko rule, and territory scoring.</p>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>🚀 How to Launch the Game:</h3>
+            <ol>
+                <li>Make sure you have Python installed on your system</li>
+                <li>Open a terminal/command prompt in this directory</li>
+                <li>Install dependencies: <div class="command">pip install -r requirements.txt</div></li>
+                <li>Launch the game: <div class="command">streamlit run streamlit_app.py</div></li>
+                <li>Open your browser to the displayed URL (usually http://localhost:8501)</li>
+            </ol>
+            
+            <p><strong>Alternative:</strong> If you have Streamlit installed, you can also run the Python launcher script.</p>
+        </div>
+
+        <div style="margin-top: 40px;">
+            <h3>📋 Game Features:</h3>
+            <p>✅ Multiple board sizes (9×9, 13×13, 19×19)<br>
+            ✅ Four AI difficulty levels (Easy to Expert)<br>
+            ✅ Real-time score calculation<br>
+            ✅ Complete move history<br>
+            ✅ Professional Go rules implementation<br>
+            ✅ Beautiful responsive design</p>
+        </div>
+
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.3);">
+            <p><em>Built with Python, Streamlit, PyTorch, and reinforcement learning concepts</em></p>
+        </div>
+    </div>
+</body>
+</html>

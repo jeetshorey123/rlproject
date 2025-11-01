@@ -1,11 +1,13 @@
 # Alpha Go - Reinforcement Learning Project
 
-## Project Files
-*.py
-*.md
-*.txt
-*.html
-*.bat
+## Include all project files
+# *.py
+# *.md  
+# *.txt
+# *.html
+# *.bat
+
+## Exclude trained models and cache
 *.pkl
 
 ## Byte-compiled / optimized / DLL files
